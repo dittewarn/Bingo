@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bingo</title>
+</head>
+
+<body>
+    <h3>Bingo grid generator</h3>
+    <form>
+        How many bingo grids do you want to generate?
+        <br>
+        <input type="text" name="amountOfPlayers">
+        <br>
+        <br> Select grid size
+        <br>
+        <input type="radio" id="gridSize" value="5" checked>5x5
+        <br>
+        <input type="radio" id="gridSize" value="6">6x6
+        <br>
+        <input type="radio" id="gridSize" value="7">7x7
+        <br>
+        <br> Number range
+        <br>
+        <input type="radio" id="rangeEnd" value="50">1-50
+        <br>
+        <input type="radio" id="rangeEnd" value="75" checked>1-75
+        <br>
+        <input type="radio" id="rangeEnd" value="100">1-100
+        <br>
+        <br>
+        <button onclick="generateGrids()">Generate!</button>
+    </form>
+    <script src="bingo.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+</body>
+
+</html>
